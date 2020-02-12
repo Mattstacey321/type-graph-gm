@@ -1,1 +1,1 @@
-"# type-graph-gm" 
+"My GraphQL server with TypeGraphQL"
