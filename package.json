@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node --inspect=5858 -r ts-node/register src/index.ts",
     "start:watch": "nodemon",
-    "build": "tsc"
+    "build": "tsc",
+    "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec refresh",
+    "start2": "npm run build && node build/server.js"
   },
   "nodemonConfig": {
     "ignore": [
